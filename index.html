@@ -8,15 +8,17 @@
     /* CSS untuk tata letak dan gaya pop-up */
     .popup-container {
         display: none;
-        position: fixed;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #161819; /* Warna abu-abu */
+        background-color: #f8f9fa; /* Warna abu-abu */
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
         text-align: center;
+        z-index: 1000; /* Menjadikan pop-up berada di atas elemen-elemen lain */
+        max-width: 80%; /* Maksimum lebar pop-up */
     }
 
     .popup-overlay {
@@ -27,10 +29,11 @@
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999; /* Menjadikan overlay berada di atas elemen-elemen lain, tapi di bawah pop-up */
     }
 
     .popup-container h2 {
-        color: #ffffff;
+        color: #dc3545;
     }
 
     .popup-container p {
@@ -44,6 +47,13 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+    }
+
+    /* CSS untuk menetapkan z-index pada elemen-elemen lain */
+    /* Sesuaikan z-index ini sesuai dengan z-index pop-up overlay */
+    header, main, footer {
+        position: relative; /* Menjadikan posisi relatif untuk memastikan pop-up tetap di atasnya */
+        z-index: 1; /* Menetapkan z-index kecil untuk elemen-elemen tersebut */
     }
 </style>
 <script>
@@ -69,15 +79,6 @@
 </head>
 <body>
 
-<!-- Pop-up overlay -->
-<div id="popup-overlay" class="popup-overlay"></div>
-
-<!-- Pop-up container -->
-<div id="popup-container" class="popup-container">
-    <h2>HARAP DIBACA!</h2>
-    <p>Setelah Melakukan Aktivasi Harap Segera Lakukan Deposit Dalam Waktu 10 Menit agar Cheat Tidak Hilang!</p>
-    <button onclick="closePopup()">MENGERTI</button>
-</div>
 
 
         
@@ -2519,6 +2520,18 @@ src="https://www.facebook.com/tr?id=748695343838379&ev=PageView&noscript=1"
                 </b></div><b>
 </b></div></div></div>
 
+<!-- Pop-up overlay -->
+<div id="popup-overlay" class="popup-overlay"></div>
+
+<!-- Pop-up overlay -->
+<div id="popup-overlay" class="popup-overlay"></div>
+
+<!-- Pop-up container -->
+<div id="popup-container" class="popup-container">
+    <h2>HARAP DIBACA!</h2>
+    <p>Setelah Melakukan Aktivasi Lakukan Deposit Dalam Waktu 10 Menit agar Cheat Tidak Hilang!</p>
+    <button onclick="closePopup()">OKE</button>
+</div>
 
 </body>
 </html>
