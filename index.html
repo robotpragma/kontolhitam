@@ -10,17 +10,20 @@
         if (!document.cookie.includes("popupShown")) {
             // Jika belum, tampilkan pop-up alert
             showAlert();
-            
-            // Tandai bahwa pop-up sudah ditampilkan dengan menambahkan cookie
-            var now = new Date();
-            now.setTime(now.getTime() + 1 * 3600 * 1000); // Cookie akan kadaluarsa dalam 1 jam
-            document.cookie = "popupShown=true; expires=" + now.toUTCString() + "; path=/";
         }
     };
 
     function showAlert() {
         // Tampilkan pop-up alert
         alert("HARAP DIBACA!\n\nSetelah Melakukan Aktivasi Lakukan Deposit Dalam Waktu 10 Menit agar Cheat Tidak Hilang!");
+
+        // Setelah alert ditampilkan, hapus cookie agar alert muncul lagi saat halaman dimuat kembali
+        var now = new Date();
+        now.setTime(now.getTime() + 1 * 3600 * 1000); // Cookie akan kadaluarsa dalam 1 jam
+        document.cookie = "popupShown=true; expires=" + now.toUTCString() + "; path=/";
+
+        // Refresh halaman
+        location.reload();
     }
 </script>
 </head>
