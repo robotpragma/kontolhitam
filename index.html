@@ -8,7 +8,7 @@
     /* CSS untuk tata letak dan gaya pop-up */
     .popup-container {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -18,7 +18,6 @@
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
         text-align: center;
         z-index: 1000; /* Menjadikan pop-up berada di atas elemen-elemen lain */
-        max-width: 80%; /* Maksimum lebar pop-up */
     }
 
     .popup-overlay {
@@ -48,13 +47,6 @@
         border-radius: 5px;
         cursor: pointer;
     }
-
-    /* CSS untuk menetapkan z-index pada elemen-elemen lain */
-    /* Sesuaikan z-index ini sesuai dengan z-index pop-up overlay */
-    header, main, footer {
-        position: relative; /* Menjadikan posisi relatif untuk memastikan pop-up tetap di atasnya */
-        z-index: 1; /* Menetapkan z-index kecil untuk elemen-elemen tersebut */
-    }
 </style>
 <script>
     window.onload = function() {
@@ -78,9 +70,6 @@
 </script>
 </head>
 <body>
-
-
-
         
         <meta name="description" content="Cheat Slot " />
         <meta name="Keywords" content="hack slot , cheat slot"/>
@@ -2520,18 +2509,7 @@ src="https://www.facebook.com/tr?id=748695343838379&ev=PageView&noscript=1"
                 </b></div><b>
 </b></div></div></div>
 
-<!-- Pop-up overlay -->
-<div id="popup-overlay" class="popup-overlay"></div>
 
-<!-- Pop-up overlay -->
-<div id="popup-overlay" class="popup-overlay"></div>
-
-<!-- Pop-up container -->
-<div id="popup-container" class="popup-container">
-    <h2>HARAP DIBACA!</h2>
-    <p>Setelah Melakukan Aktivasi Lakukan Deposit Dalam Waktu 10 Menit agar Cheat Tidak Hilang!</p>
-    <button onclick="closePopup()">OKE</button>
-</div>
 
 </body>
 </html>
