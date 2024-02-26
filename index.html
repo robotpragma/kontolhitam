@@ -4,72 +4,46 @@
 <meta charset="windows-1252">
 <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Robopragma Hitamslot (2024)</title>
-<style>
-    /* CSS untuk tata letak dan gaya pop-up */
-    .popup-container {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #2a2a2a; /* Warna abu-abu */
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-        text-align: center;
-        z-index: 1000; /* Menjadikan pop-up berada di atas elemen-elemen lain */
-    }
-
-    .popup-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 999; /* Menjadikan overlay berada di atas elemen-elemen lain, tapi di bawah pop-up */
-    }
-
-    .popup-container h2 {
-        color: #2a2a2a;
-    }
-
-    .popup-container p {
-        margin-bottom: 20px;
-    }
-
-    .popup-container button {
-        padding: 10px 20px;
-        background-color: #dc3545;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-</style>
-<script>
-    window.onload = function() {
-        // Tampilkan pop-up alert
-        showPopup();
-    };
-
-    function showPopup() {
-        // Tampilkan pop-up overlay
-        document.getElementById('popup-overlay').style.display = 'block';
-        // Tampilkan pop-up container
-        document.getElementById('popup-container').style.display = 'block';
-    }
-
-    function closePopup() {
-        // Sembunyikan pop-up overlay
-        document.getElementById('popup-overlay').style.display = 'none';
-        // Sembunyikan pop-up container
-        document.getElementById('popup-container').style.display = 'none';
-    }
-</script>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS jika diperlukan */
+  </style>
 </head>
 <body>
+
+<!-- Tombol yang memicu pop-up -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popupModal">
+  Buka Pop-up
+</button>
+
+<!-- Pop-up -->
+<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="popupModalLabel">HARAP DIBACA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>DEPO!!</p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://hitamslotvip.com" class="btn btn-primary">DAFTAR</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
         
         <meta name="description" content="Cheat Slot " />
         <meta name="Keywords" content="hack slot , cheat slot"/>
@@ -2508,16 +2482,6 @@ src="https://www.facebook.com/tr?id=748695343838379&ev=PageView&noscript=1"
                     </div>
                 </b></div><b>
 </b></div></div></div>
-
-<!-- Pop-up overlay -->
-<div id="popup-overlay" class="popup-overlay"></div>
-
-<!-- Pop-up container -->
-<div id="popup-container" class="popup-container">
-    <h2>HARAP DIBACA!</h2>
-    <p>Setelah Melakukan Aktivasi Lakukan Deposit Dalam Waktu 10 Menit agar Cheat Tidak Hilang!</p>
-    <button onclick="closePopup()">OKE</button>
-</div>
 
 </body>
 </html>
