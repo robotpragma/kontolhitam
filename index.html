@@ -8,61 +8,48 @@
 <meta charset="windows-1252">
 <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Robopragma Hitamslot (2024)</title>
-<!-- Panggil library Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .modal-title {
-      background-color: #6c757d; /* Warna abu-abu untuk background TITLE */
-      color: #ffffff; /* Warna putih untuk teks TITLE */
-      text-align: center; /* Posisi teks TITLE di tengah */
-      border-bottom: 3px solid #6c757d; /* Border bawah TITLE */
-      padding: 10px;
-    }
-    .modal-body {
-      background-color: #f8f9fa; /* Warna abu-abu untuk background ISI PESAN */
-      color: #000000; /* Warna hitam untuk teks ISI PESAN */
-      padding: 20px;
-    }
-    .modal-footer {
-      justify-content: center; /* Posisi tombol di tengah */
+    /* CSS untuk menengahkan teks */
+    .centered-text {
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="customPopup" tabindex="-1" role="dialog" aria-labelledby="customPopupLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-title">
-        <h5 class="modal-title" id="exampleModalLabel">HARAP DIBACA!</h5>
+      <div class="modal-header">
+        <h5 class="modal-title centered-text" id="customPopupLabel">HARAP DIBACA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class="modal-body">
-        <p>SEBELUM MELAKUKAN AKTIVASI KALIAN HARUS MENDAFTARKAN AKUN TERLEBIH DAHULU</p>
-      </div>
-      <div class="modal-footer">
-        <a href="https://hitamslotvip.com" class="btn btn-primary">DAFTAR</a>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">TUTUP</button>
+      <div class="modal-body centered-text">
+        <p>SEBELUM MELAKUKAN AKTIVASI HARAP MENDAFTARKAN AKUN TERLEBIH DAHULU</p>
+        <a href="https://hitamslotvip.com" target="_blank" class="btn btn-primary">DAFTAR</a>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Panggil library Bootstrap JavaScript (Popper.js diperlukan untuk popover/tooltip) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- Script untuk menampilkan modal secara otomatis saat website dibuka -->
 <script>
   $(document).ready(function(){
-    $('#exampleModal').modal('show');
+    $('#customPopup').modal('show');
   });
 </script>
 
 </body>
 </html>
-        
         <meta name="description" content="Cheat Slot " />
         <meta name="Keywords" content="hack slot , cheat slot"/>
         <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
