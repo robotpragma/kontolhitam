@@ -1,14 +1,65 @@
 
 
-
-
 <!doctype html>
 <html lang="id" amp i-amphtml-binding i-amphtml-layout i-amphtml-no-boilerplate transformed="self;v=1" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <head>
+
+<style>
+    /* CSS untuk mempercantik tampilan pop-up */
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        padding: 20px;
+        border: 2px solid #000000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+</style>
+</head>
+<body>
+
+<!-- HTML untuk pop-up -->
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+    <h2>HARAP DIBACA!!</h2>
+    <p>SEBEKUM MELAKUKAN AKTIVASI PASTIKAN AKUN KALIAN SUDAH TERDAFTAR!</p>
+    <button onclick="closePopup()">Tutup</button>
+</div>
+
+<script>
+    // Fungsi untuk menampilkan pop-up saat halaman dimuat
+    window.onload = function() {
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("popup").style.display = "block";
+    };
+
+    // Fungsi untuk menutup pop-up
+    function closePopup() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+
 <meta charset="windows-1252">
 <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Robopragma Hitamslot (2024)</title>
-
         <meta name="description" content="Cheat Slot " />
         <meta name="Keywords" content="hack slot , cheat slot"/>
         <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
@@ -2077,33 +2128,7 @@ h2{
         }
         
     </style>
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '748695343838379');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=748695343838379&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-  <!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* CSS untuk menengahkan teks */
-    .centered-text {
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
+    </head>
 <body class="amp-mode-mouse" style="opacity: 1; visibility: visible; animation: 0s ease 0s 1 normal none running none;">
     <div class="navbar">
         
@@ -2111,7 +2136,7 @@ src="https://www.facebook.com/tr?id=748695343838379&ev=PageView&noscript=1"
             <img class="gocap imag" height="50px" src="https://i.ibb.co/x5nTQ5K/Juui-Ev9-1.png">
         </nav>
         <div class="hack">
-            Robopragma v19.1<img width="16" src="">
+            Robopragma by Detektif Slot Gacor<img width="16" src="">
         </div>
         <div id="container">
             <form>
@@ -2119,7 +2144,7 @@ src="https://www.facebook.com/tr?id=748695343838379&ev=PageView&noscript=1"
                 <br>
                 <p> MASUKKAN USERNAME ( PASTIKAN TELAH TERDAFTAR ) :</p>
                 <p> JIKA BELUM TERDAFTAR BISA KLIK 
-                <a href="https://rebrand.ly/HITAMSLOTVVIP"><strong><b><u> <mark style="background-color:#ff0000">DISINI</strong></b></u></a>
+                <a href="https://rebrand.ly/hitamvip"><strong><b><u> <mark style="background-color:#ff0000">DISINI</strong></b></u></a>
                 <p> ATAU TOMBOL DAFTAR DIATAS</p>
                 <input id="user2" type="text" placeholder="User ID " style="height: 40px;font-size: 14pt;" required>
                 <br><br>
@@ -2437,7 +2462,7 @@ src="https://www.facebook.com/tr?id=748695343838379&ev=PageView&noscript=1"
             
             setTimeout(
                 function(){
-                    window.location = "https://rebrand.ly/HITAMSLOTVVIP"
+                    window.location = "https://hitamslot.com"
                 },
             10000);
             
@@ -2463,36 +2488,6 @@ src="https://www.facebook.com/tr?id=748695343838379&ev=PageView&noscript=1"
                     </div>
                 </b></div><b>
 </b></div></div></div>
-
-<!-- Modal Pop-up -->
-<div class="modal fade" id="customPopup" tabindex="-1" role="dialog" aria-labelledby="customPopupLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title centered-text" id="customPopupLabel">HARAP DIBACA</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body centered-text">
-        <p>SEBELUM MELAKUKAN AKTIVASI HARAP MENDAFTARKAN AKUN TERLEBIH DAHULU</p>
-        <a href="https://hitamslotvip.com" target="_blank" class="btn btn-primary">DAFTAR</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<!-- JavaScript untuk menampilkan pop-up otomatis -->
-<script>
-  $(document).ready(function(){
-    $('#customPopup').modal('show');
-  });
-</script>
 
 </body>
 </html>
