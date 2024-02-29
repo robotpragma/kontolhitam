@@ -12,7 +12,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: #29272d; /* Mengubah warna latar belakang menjadi abu-abu */
-        padding: 32px;
+        padding: 30px;
         border: 2px solid #000000;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         z-index: 9999;
@@ -28,9 +28,9 @@
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 9998;
     }
-    .popup button {
+    .popup img {
         margin-top: 10px; /* Menambah jarak antara tombol */
-    font-weight: bold; /* Membuat teks tombol menjadi tebal */
+        cursor: pointer; /* Menambahkan kursor saat diarahkan ke tombol */
     }
 </style>
 </head>
@@ -41,7 +41,9 @@
 <div class="popup" id="popup">
     <h2>HARAP DIBACA!!</h2>
     <p>SEBELUM MELAKUKAN AKTIVASI PASTIKAN AKUN KALIAN SUDAH TERDAFTAR!</p>
-    <button onclick="openLink()">DAFTAR DI SINI</button>
+    <a href="https://rebrand.ly/hitamvip" target="_blank">
+        <img src="https://i.ibb.co/DCdLknm/daftar.png" alt="Daftar di sini">
+    </a>
 </div>
 
 <script>
@@ -53,7 +55,7 @@
 
     // Fungsi untuk menutup pop-up setelah mengklik tombol "Daftar"
     function openLink() {
-        window.open("https://hitamslotvip.com", "_blank"); // Membuka tautan di tab baru
+        window.open("https://rebrand.ly/hitamvip", "_blank"); // Membuka tautan di tab baru
         document.getElementById("overlay").style.display = "none";
         document.getElementById("popup").style.display = "none";
     }
