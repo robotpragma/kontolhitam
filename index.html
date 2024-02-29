@@ -28,9 +28,14 @@
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 9998;
     }
-    .popup img {
+    .popup button {
         margin-top: 10px; /* Menambah jarak antara tombol */
-        cursor: pointer; /* Menambahkan kursor saat diarahkan ke tombol */
+        background-color: #ffbd00; /* Warna latar belakang tombol */
+        color: #000000; /* Warna teks tombol */
+        font-weight: bold; /* Membuat teks tombol menjadi tebal */
+        padding: 10px 20px; /* Padding tombol */
+        border: none; /* Menghapus border tombol */
+        cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
     }
 </style>
 </head>
@@ -41,9 +46,7 @@
 <div class="popup" id="popup">
     <h2>HARAP DIBACA!!</h2>
     <p>SEBELUM MELAKUKAN AKTIVASI PASTIKAN AKUN KALIAN SUDAH TERDAFTAR!</p>
-    <a href="https://rebrand.ly/hitamvip" target="_blank">
-        <img src="https://i.ibb.co/d7n2xXn/daftarrr.png" alt="Daftar di sini">
-    </a>
+    <button onclick="openLink()">DAFTAR DI SINI</button>
 </div>
 
 <script>
