@@ -17,6 +17,8 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         z-index: 9999;
         text-align: center; /* Menyusun tombol dan teks ke tengah */
+        opacity: 0; /* Atur opasitas awal menjadi 0 */
+        transition: opacity 0.5s ease-in-out; /* Transisi opasitas dengan durasi 0.5 detik */
     }
     .overlay {
         display: none;
@@ -29,13 +31,19 @@
         z-index: 9998;
     }
     .popup button {
-        margin-top: 8px; /* Menambah jarak antara tombol */
+        margin-top: 5px; /* Menambah jarak antara tombol */
         background-color: #ffbd00; /* Warna latar belakang tombol */
         color: #000000; /* Warna teks tombol */
         font-weight: bold; /* Membuat teks tombol menjadi tebal */
-        padding: 7px 7px; /* Padding tombol */
+        padding: 6px 5px; /* Padding tombol */
         border: none; /* Menghapus border tombol */
         cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
+    }
+
+    /* Tambahkan gaya baru untuk memunculkan pop-up dengan animasi */
+    .popup.show {
+        display: block;
+        opacity: 1; /* Atur opasitas menjadi 1 saat pop-up ditampilkan */
     }
 </style>
 </head>
@@ -53,7 +61,7 @@
     // Fungsi untuk menampilkan pop-up saat halaman dimuat
     window.onload = function() {
         document.getElementById("overlay").style.display = "block";
-        document.getElementById("popup").style.display = "block";
+        document.getElementById("popup").classList.add("show"); // Tambahkan kelas "show" untuk memunculkan pop-up dengan animasi
     };
 
     // Fungsi untuk menutup pop-up setelah mengklik tombol "Daftar"
